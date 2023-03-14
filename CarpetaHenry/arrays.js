@@ -50,14 +50,47 @@ console.log(palabraArreglada);*/
 //Metodos para recorrer Arrays
 //ForEach
 
-var numeros=[1,2,3,4];
-/*
+/*var numeros=[1,2,3,4];
+
 numeros.forEach((num)=> console.log(num));
 numeros.forEach((num)=> {if(num===3){console.log(num);}});*/
 
 //Metodo Map
 
-var masUno=numeros.map((num)=>{
+/*var masUno=numeros.map((num)=>{
     return num+1;
 });
-console.log(masUno);
+console.log(masUno);*/
+
+//Bucles en los arreglos
+
+/*var array =[1,2,3,4,5];
+
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+    
+}*/
+
+
+/*function encontrarLetraP(string){
+    var letras =string.split('');
+    for (let i = 0; i < letras.length; i++) {
+        
+        if(letras[i].toLowerCase()==='p'){
+            console.log('Si contiene a P');
+        }
+    }
+}
+
+encontrarLetraP('Javascript');
+encontrarLetraP('HenryP');*/
+
+//Bucle While en arrays
+
+var arr=[];
+
+while (arr.length<5) {
+    arr.push('BOOM');
+}
+console.log(arr);
+
