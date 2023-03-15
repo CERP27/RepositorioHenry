@@ -21,6 +21,7 @@ console.log(persona.nombre);
 //CREAR
 var autos = {};
 autos.marcas = ['Ford', 'Audi', 'Ferrari'];
+autos.marcas.push('Kia');
 console.log(autos);
 
 //BORRAR
@@ -50,6 +51,13 @@ console.log(tienePropiedad);
 var libro = { autor: 'Borges', genero: 'Policial', año: 1990 };
 var todasLasPropiedades = Object.keys(libro);
 
+
+//FOR IN
+var mundo={
+    'Oceanos':7,
+    'Paises':195,
+    'Mares':5
+};
 console.log(todasLasPropiedades);
 for (let prop in mundo) {
    console.log('Esta es la propiedad: ', prop);
@@ -62,7 +70,27 @@ var mascota = {
     raza: 'Ovejero Alemán',
     amistoso: true,
     dueño: 'María López',
-    info: () => {
-       console.log('Mi perro es un  ' + this.raza);
-    },
+    
  };
+ mascota["info"]=() => {
+    console.log('Mi perro es un  ' + mascota.raza);
+ 
+ };
+
+ mascota.info();
+
+
+
+ var objeto={
+    'precio':80,
+    'porcentajeDeDescuento':0.15
+ }
+
+ objeto['calcularPrecioDescuento']=() =>{
+    return objeto.precio*objeto.porcentajeDeDescuento;
+ }
+ precioFinal=objeto.precio-objeto.calcularPrecioDescuento();
+
+ console.log(objeto.calcularPrecioDescuento());
+ console.log(precioFinal);
+ 
