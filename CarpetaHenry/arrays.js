@@ -31,9 +31,9 @@ console.log(incluyeDali);*/
 
 //Metodo Every, sirve para saber si todos los elementos de un array cumplen una condicion
 
-/*var numeros=[7,6,8,9];
+var numeros=[7,6,8,9];
 var cumplenCondicion=numeros.every((num)=> {return num>5});
-console.log(cumplenCondicion);*/
+console.log(cumplenCondicion);
 
 //Metodo Split y Join
 
@@ -86,11 +86,11 @@ encontrarLetraP('Javascript');
 encontrarLetraP('HenryP');*/
 
 //Bucle While en arrays
-
+/*
 var arr=[];
 
 while (arr.length<5) {
     arr.push('BOOM');
 }
 console.log(arr);
-
+*/
