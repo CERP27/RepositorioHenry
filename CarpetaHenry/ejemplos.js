@@ -70,9 +70,25 @@ String.prototype.reverse=function(){
 
 return result;
 }
-var string="jdsfbbaaddaa";
-var ordenada= letras.split('');
-ordenada.sort();
-var ordenadas=ordenada.join('');
-console.log(frecuencias(ordenadas));
+//var string="jdsfbbaaddaa";
+////var ordenada= letras.split('');
+////ordenada.sort();
+//var ordenadas=ordenada.join('');
 
+
+var amigos = [{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }];
+var amiwo;
+for (const amigo of amigos) {
+    if(amigo['nombre']==='toni'){
+        amiwo=amigo;
+    }
+    
+}
+
+var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }];
+var nombres=[];
+nombres=productos.map(function(product){
+    return product.name;
+})
+
+console.log(nombres);
