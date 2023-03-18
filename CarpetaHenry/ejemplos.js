@@ -92,3 +92,29 @@ nombres=productos.map(function(product){
 })
 
 console.log(nombres);
+
+var nume=[5,3,2,9,15,24,4];
+
+nume.sort((a,b)=>(b-a));
+console.log(nume);
+
+
+var abcd=[2,5,7,10,11,15,20];
+var n=13
+var suma;
+
+  for (let i = 0; i < abcd.length; i++) {
+    for (let y = 0; y < abcd.length; y++) {
+      if(abcd[i]===abcd[y]){
+        continue;
+      }else{
+        suma=abcd[i]+abcd[y];
+        console.log(suma);
+        if(suma===n){
+          return true;
+        }
+      }
+      
+    }
+  }
+  
